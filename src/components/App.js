@@ -1,10 +1,13 @@
 import "../styles/App.css";
+import Hamburguer from "./Hamburguer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <header className="App-header">
+        <Hamburguer />
+      </header>
+    </>
   );
 }
 
