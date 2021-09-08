@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/Hamburguer.css";
 
 const Hamburguer = () => {
 
@@ -6,9 +7,9 @@ const Hamburguer = () => {
 
     return (
         <div className="hamburguer" onClick={()=>setMenuOpen(!menuOpen)}>
-            <span className="span "></span>
-            <span className="span "></span>
-            <span className="span "></span>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
         </div>
     )
 }
