@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
-import "../styles/Hamburguer.css";
+import "../styles/Hamburguer.scss";
 
 const Hamburguer = () => {
-
-    const [menuOpen, setMenuOpen] = useState(false)
+    
+    const [menuOpen, setMenuOpen] = useState(false); 
+    const onClick = () => {setMenuOpen(!menuOpen)};
+    
 
     return (
-        <div className="hamburguer" onClick={()=>setMenuOpen(!menuOpen)}>
+        <div className="hamburguer" onClick={onClick}>
+            
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
         </div>
     )
-}
+};
 
 
 export default Hamburguer
