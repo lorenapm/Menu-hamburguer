@@ -9,7 +9,7 @@ const Hamburguer = () => {
 
     return (
         <>
-        <div className="hamburguer" onClick={onClick}>
+        <div className="hamburguer" onClick={onClick} open={menuOpen}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>
